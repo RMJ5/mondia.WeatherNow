@@ -1,0 +1,20 @@
+#Database Configuration
+
+db.driver=com.mysql.jdbc.Driver
+db.url=jdbc:mysql://us-cdbr-cb-east-01.cleardb.net:3306/cb_weatherdb
+db.username=b854d3f8ddd3c2
+db.password=92c2dbe2
+ 
+#Hibernate Configuration
+hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+hibernate.format_sql=true
+hibernate.ejb.naming_strategy=org.hibernate.cfg.ImprovedNamingStrategy
+hibernate.show_sql=true
+ 
+#MessageSource
+message.source.basename=i18n/messages
+message.source.use.code.as.default.message=true
+ 
+#EntityManager
+#Declares the base package of the entity classes
+entitymanager.packages.to.scan=com.mondia.WeatherNow.model
